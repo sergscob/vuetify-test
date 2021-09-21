@@ -53,7 +53,7 @@ export default {
     computed: {
         heads() {
             return ['', ...this.$store.getters['users']
-                .filter( item => !item.head )
+                // .filter( item => !item.head )
                 .map( el => el.name )
             ]
         }
